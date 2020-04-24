@@ -1,6 +1,7 @@
 const theme = {
   colors: {
-    base: "#36A4EF",
+    primary: "#f4760e",
+    secondary: "#d0d2d4",
   },
   fonts: {
     base: "Roboto",

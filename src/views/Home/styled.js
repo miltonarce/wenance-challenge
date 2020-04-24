@@ -7,8 +7,9 @@ export const Main = styled.main`
   font-family: ${(props) => props.theme.fonts.base};
   font-size: ${(props) => props.theme.fonts.sizeBase};
   & > h1 {
-    color: ${(props) => props.theme.colors.base};
+    color: ${(props) => props.theme.colors.primary};
     font-size: ${(props) => props.theme.fonts.title};
     font-weight: 600;
+    text-align: center;
   }
 `;
