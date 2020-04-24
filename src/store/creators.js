@@ -36,7 +36,6 @@ export const getPeople = () => async dispatch => {
   try {
     const { data, status, statusText } = await Api.people.fetch();
     if (status === 200) {
-      console.log(data);
       dispatch(getPeopleSuccess(data));
     } else {
       dispatch(getPeopleError(statusText));
