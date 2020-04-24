@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { Section } from "./styled";
 
 const SearchForm = ({ action }) => {
@@ -24,5 +25,8 @@ const SearchForm = ({ action }) => {
   )
 };
 
+SearchForm.propTypes = {
+  action: PropTypes.func.isRequired
+}
 
 export default SearchForm;

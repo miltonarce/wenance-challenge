@@ -1,9 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import PropTypes from "prop-types";
 import { Li } from "./styled";
 import { deletePeople } from "../../store/creators";
 
-const Card = ({ person, action }) => {
+const Card = ({ person }) => {
   const dispatch = useDispatch();
   
   const handleDelete = people => {
@@ -18,6 +19,12 @@ const Card = ({ person, action }) => {
     <div>
       <button type="button" onClick={() => handleDelete(person.idPeople)}>Delete</button>
     </div>
-  </Li>)};
+    </Li>)
+};
+  
+Card.propTypes = {
+  person: PropTypes.object,
+}
+
 
 export default Card;

@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Card from "./../Card";
 
-const CardList = ({ items, actions }) => {
+const CardList = ({ items }) => {
   return (
     <ul>
       {
@@ -10,5 +11,8 @@ const CardList = ({ items, actions }) => {
     </ul>
   )};
 
+CardList.propTypes = {
+ items: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+}
 
 export default CardList;
